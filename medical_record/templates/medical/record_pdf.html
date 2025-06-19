@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: sans-serif; }
+    h2 { color: #333; }
+  </style>
+</head>
+<body>
+  <h2>Medical Record</h2>
+  <p><strong>Patient:</strong> {{ record.patient.username }}</p>
+  <p><strong>Doctor:</strong> {{ record.doctor.user.username }}</p>
+  <p><strong>Condition:</strong> {{ record.condition }}</p>
+  <p><strong>Notes:</strong> {{ record.notes }}</p>
+  <p><strong>Prescriptions:</strong> {{ record.prescriptions }}</p>
+  <p><strong>Created At:</strong> {{ record.created_at }}</p>
+</body>
+</html>
